@@ -1,0 +1,82 @@
+const Sdata = {
+    shopItems: [
+      {
+        id: 9,
+        cover: "./img/Menu/4.jpg",
+        name: "Mì ý ",
+        price: "180",
+        discount: "25",
+      },
+      {
+        id: 10,
+        cover: "./img/Menu/5.jpg",
+        name: "Pizza pepperoni ",
+        price: "120",
+        discount: "10",
+      },
+      {
+        id: 11,
+        cover: "./img/Menu/6.jpg",
+        name: "Pizza rau củ",
+        price: "20",
+        discount: "50 ",
+      },
+      {
+        id: 12,
+        cover: "./img/Menu/8.jpg",
+        name: "Pizza phô mai",
+        price: "200",
+        discount: "10 ",
+      },
+      {
+        id: 13,
+        cover: "./img/Menu/9.jpg",
+        name: "Pizza sốt pesto",
+        price: "150",
+        discount: "20 ",
+      },
+      {
+        id: 14,
+        cover: "./img/Menu/10.jpg",
+        name: "Pizza hawaii",
+        price: "180",
+        discount: "20 ",
+      },
+      {
+        id: 15,
+        cover: "./img/Menu/13.jpg",
+        name: "Hamburger nhiều tầng",
+        price: "180",
+        discount: "5 ",
+      },
+      {
+        id: 16,
+        cover: "./img/Menu/14.jpg",
+        name: "Hamburger kiểu Pháp",
+        price: "120",
+        discount: "10",
+      },
+      {
+        id: 17,
+        cover: "./img/Menu/th15.jpg",
+        name: "Tráng miệng bánh kem ",
+        price: "5",
+        discount: "2",
+      },
+      {
+        id: 18,
+        cover: "./img/Menu/th16.jpg",
+        name: "Tráng miệng bánh kem socola ",
+        price: "5",
+        discount: "2",
+      },
+      {
+        id: 19,
+        cover: "./img/Menu/th14.jpg",
+        name: "Tráng miệng Súp ngọt ",
+        price: "5",
+        discount: "2",
+      },
+    ],
+  }
+  export default Sdata

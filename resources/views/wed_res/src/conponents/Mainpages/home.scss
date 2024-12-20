@@ -1,0 +1,167 @@
+:root{
+    --PrimaryColor: #53A6D8;
+    --SecondaryColor: #88CDF6;
+    --WhiteColor: #ffffff;
+    --lineargradient: linear-gradient(to right, #53A6D8, #88CDF6 );
+    --backgroundColor: #e94560;
+}
+
+.home{
+    .container{
+        margin-top: 0.5rem;
+        padding: 1rem;
+        flex-direction: row;
+        gap: 4rem;
+        position: relative;
+        .homeSlide{
+            width: 77%;
+            .slick-dots{
+                margin-top: 10px;
+                position: relative;
+            }
+            ul li{                
+                border: 2px solid var(--PrimaryColor);
+                border-radius: 50%;
+                padding: 10px;
+
+                button{
+                    background: transparent !important;
+                    color: transparent !important;
+
+                    &::before{
+                        font-size: 15px;
+                        color: var(--SecondaryColor);
+                        position: absolute;
+                        top: 1.5px;
+                        left: 0;
+                        // right: 5px;
+                        margin: auto;
+                    }
+                }
+            }
+            .container{
+                    .box{
+                        padding: 1rem 1rem;
+                        width: 100%;
+                        gap: 1rem;
+                        justify-content: center;
+                        align-items: center;
+                        .left{
+                            width: 70%;
+                            padding: 0 2rem;
+                            display: flex;
+                            gap: 1.2rem;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: flex-start;
+                            transition: all 0.5s ease;
+                            h1{
+                                font-size: 45px;
+                                font-weight: 700;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                            button{
+                                font-size: 20px;
+                                &:hover{
+                                    opacity: 0.7;
+                                }
+                            }
+                        }
+                        .right{
+                            width: 30%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            overflow: hidden;
+                            img{
+                                width: 100%;
+                                height: 300px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+            }
+        }
+
+        @media screen and (max-width:1024px){
+            .homeSlide{
+                width: 100%;                
+            }
+        }
+
+        @media screen and (max-width:768px){  
+            .homeSlide{  
+                .container{
+                    .box{
+                        .left{
+                        width: 60%;
+                            h1{
+                                font-size: 30px;
+                            }
+                            p{
+                                font-size: 15px;
+                            }
+                            button{
+                                font-size: 15px;
+                            }
+
+                        }
+                        .right{
+                            width: 40%;
+                        }
+                    }
+                }                    
+                
+            }
+        }
+        
+
+        @media screen and (max-width:400px){
+            .homeSlide{
+                width: 100%;         
+                .container{
+                    .box{
+                        flex-direction: column;
+                        .left{
+                        width: 100%;
+                        padding: 0;
+                            h1{
+                                font-size: 28px;
+                            }
+                            p{
+                                font-size: 14px;
+                            }
+                            button{
+                                font-size: 15px;
+                            }
+
+                        }
+                        .right{
+                            width: 100%;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home{
+        .pagePadding{
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }    
+}
+
+@media screen and (max-width: 408px) {
+    .home{
+        .pagePadding{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+    }    
+}

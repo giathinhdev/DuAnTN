@@ -1,0 +1,140 @@
+:root{
+    --PrimaryColor: #53A6D8;
+    --SecondaryColor: #88CDF6;
+    --WhiteColor: #ffffff;
+    --lineargradient: linear-gradient(to right, #53A6D8, #88CDF6 );
+    --backgroundColor: #e94560;
+  }
+
+.shops{
+    position: relative;
+    .container{
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        .sleftContent{
+            flex: 1;
+            .cate{
+                .cateHeading{
+                    padding: 10px;
+                    cursor: pointer;
+                    &:hover{
+                        color: var(--backgroundColor);
+                    }
+                    .sunnymargin{
+                        margin: 0 20px;
+                    }
+                    .change{
+                        opacity: 0.5;
+                    }
+                }
+                .box{
+                    align-items: center;
+                    gap: 20px;
+                    margin: 10px 0;
+                    background-color: #f6f9fc;
+                    padding: 12px;
+                    border-radius: 25px;
+                    transition: all 0.5s ease;
+                    
+                    .imgDiv{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    &:hover{
+                        background-color: var(--SecondaryColor);
+                        color: var(--WhiteColor);
+                        cursor: pointer;
+                        box-shadow: 0 4px 16px rgba(43,52,69,.1);
+                    }
+                }
+                .sunny{
+                    &:hover{
+                        background-color: #e9456091;
+                        color: var(--WhiteColor);
+                        cursor: pointer;
+                        box-shadow: 0 4px 16px rgba(43,52,69,.1);
+                    }
+                }
+            }
+        }
+        .srightContent{
+            flex: 3;
+            .heading{
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+                .leftContent{
+                    gap: 0.5rem;
+                    .icon{
+                        font-size: 18px;
+                    }
+                }
+                .rightContent{
+                    span{
+                        opacity: 0.5;
+                        &:hover{
+                            color: var(--backgroundColor);
+                            opacity: 1;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .shopContent{
+                .shopCart{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    .box{
+                        .products{
+                            transition: all 0.5s ease;
+                            .imgDiv{
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                }
+                            }
+                            &:hover{
+                                // background-color: var(--SecondaryColor);
+                                box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
+                            }
+                        }
+                    }
+                }
+                @media screen and (max-width: 900px){
+                    .shopCart{
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+                @media screen and (max-width: 500px){
+                    .shopCart{
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:450px){
+        .container{
+            flex-direction: column;    
+            gap: 2rem;
+            .sleftContent{
+                flex: none;
+                width: 100%;
+            }
+            .srightContent{
+                flex: none;
+                width: 100%;
+            }
+
+        }
+    }
+}
